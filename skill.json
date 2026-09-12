@@ -1,0 +1,47 @@
+{
+  "name": "genpark-synthetic-persona-interview-simulator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-perspective synthetic consumer persona panel focus-group simulator generating market sentiment, purchase friction, and objection telemetry.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "market-intelligence",
+  "tags": [
+    "synthetic-persona",
+    "focus-group",
+    "market-sentiment",
+    "objection-modeling",
+    "user-research"
+  ],
+  "inputs": {
+    "product_offering": {
+      "type": "string",
+      "default": "Roborock S8 MaxV Ultra with robotic arm side brush for $1599"
+    },
+    "persona_archetypes": {
+      "type": "array",
+      "default": [
+        "Cost-Conscious Suburban Parent",
+        "Tech-Early-Adopter Engineer"
+      ]
+    }
+  },
+  "outputs": {
+    "interview_session_id": {
+      "type": "string"
+    },
+    "composite_market_sentiment": {
+      "type": "number"
+    },
+    "primary_purchase_drivers": {
+      "type": "array"
+    },
+    "persona_feedback_matrix": {
+      "type": "array"
+    },
+    "interview_dossier_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
